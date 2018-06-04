@@ -1,0 +1,4 @@
+﻿  FbullCowGame.cpp
+d:\c++\udemy\bullsandcows_solution\bullsandcows\fbullcowgame.cpp(67): warning C4018: '<': signed/unsigned mismatch
+  BullsandCows.vcxproj -> D:\C++\Udemy\BullsandCows_Solution\Debug\BullsandCows.exe
+  BullsandCows.vcxproj -> D:\C++\Udemy\BullsandCows_Solution\Debug\BullsandCows.pdb (Full PDB)
