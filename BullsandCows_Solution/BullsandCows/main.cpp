@@ -56,7 +56,15 @@ void printintro()
 {
 	// Introduce the game
 	int32 WORD_LENGTH = BCGame.GetHiddenWordLength();
+	FString Difficulty = "";
 	cout << "Welcome to Bulls and Cows, a fun word game.\n";
+	cout << "What's the difficulty you'd like to set ?" << endl;
+	cout << "1.Begginer" << endl;
+	cout << "2.Intermidiate" << endl;
+	cout << "3.Advanced" << endl;
+	cout << "4.Expert" << endl;
+	std::getline(cin, Difficulty);
+	BCGame.Reset(Difficulty);
 	cout << "Can you guess the " << WORD_LENGTH << " letter isogram I'm thinking of?\n\n";
 	return;
 }
@@ -69,7 +77,7 @@ FText GetValidGuess()
 
 	int32 CurrentTry = BCGame.GetCurrentTry();
 	// get a guess from the player
-	cout << "Try " << CurrentTry << ". Enter your guess : \n";
+	cout << "Try " << CurrentTry << ". out of " << BCGame.GetMaxTries() << ". Enter your guess : \n";
 	std::getline(cin, Guess);
 
 	// Validation for Guess

@@ -1,27 +1,33 @@
+#pragma once
+
 #include "FbullCowGame.h"
 #include <map>
 #define TMap std::map
 
+//Constructor
 FBullCowGame::FBullCowGame()
 {
-	Reset();
+	Reset("Advanced");
 }
 
 // Getters
 
-int32 FBullCowGame::GetMaxTries() const {	return MyMaxTries;}
 int32 FBullCowGame::GetCurrentTry() const { return MyCurrentTry;}
 int32 FBullCowGame::GetHiddenWordLength() const { return MyHiddenWord.length();}
+int32 FBullCowGame::GetMaxTries() const {	
+	TMap<int32, int32> HiddenWordLengthToMaxTries = { {3,5}, {4,7}, {5,8}, {6,10} };
+	return HiddenWordLengthToMaxTries[MyHiddenWord.length()];
+}
 
 
 // Functions
 
-void FBullCowGame::Reset()
+void FBullCowGame::Reset(FString DesiredDifficulty)
 {
-	constexpr int32 MY_MAX_TRIES = 8;
+	EDifficultyStats Difficulty;
+	
 	const FString HIDDEN_WORD = "planet";
 	MyCurrentTry = 1;
-	MyMaxTries = MY_MAX_TRIES;
 	MyHiddenWord = HIDDEN_WORD;
 	return;
 }

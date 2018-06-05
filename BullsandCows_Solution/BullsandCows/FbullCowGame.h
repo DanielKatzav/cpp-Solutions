@@ -9,6 +9,7 @@ struct FBullCowCount
 {
 	int32 Bulls = 0;
 	int32 Cows = 0;
+	FString Difficulty = "";
 };
 
 enum class EGuessStatus
@@ -18,6 +19,14 @@ enum class EGuessStatus
 	Not_Isogram,
 	Wrong_Length,
 	Not_Lowercase
+};
+
+enum class EDifficultyStats
+{
+	Begginer,
+	Intermidiate,
+	Advanced,
+	Expert
 };
 
 class FBullCowGame
@@ -30,17 +39,15 @@ public:
 	bool IsGameWon(int32);
 	int32 GetCurrentTry() const;
 	int32 GetHiddenWordLength() const;
-	void Reset(); // TODO make mor rich value
+	void Reset(FString); // TODO make mor rich value
 	EGuessStatus IsGuessValid(FString) const;
 
 	//counts bulls & cows and increasing try # assumin valid guess
 	FBullCowCount SubmitValidGuess(FString);
 
-	//string GenerateWordToGuess();
 
 private:
 	int32 MyCurrentTry;
-	int32 MyMaxTries;
 	FString MyHiddenWord;
 	bool IsIsogram(FString) const;
 	bool IsLowercase(FString) const;

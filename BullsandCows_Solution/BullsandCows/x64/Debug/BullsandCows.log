@@ -1,0 +1,7 @@
+﻿  FbullCowGame.cpp
+c:\users\user\desktop\bullsandcows_solution\bullsandcows\fbullcowgame.cpp(14): warning C4267: 'return': conversion from 'size_t' to 'int32', possible loss of data
+c:\users\user\desktop\bullsandcows_solution\bullsandcows\fbullcowgame.cpp(17): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\user\desktop\bullsandcows_solution\bullsandcows\fbullcowgame.cpp(25): warning C4101: 'Difficulty': unreferenced local variable
+c:\users\user\desktop\bullsandcows_solution\bullsandcows\fbullcowgame.cpp(65): warning C4267: 'initializing': conversion from 'size_t' to 'int32', possible loss of data
+  BullsandCows.vcxproj -> C:\Users\user\Desktop\BullsandCows_Solution\x64\Debug\BullsandCows.exe
+  BullsandCows.vcxproj -> C:\Users\user\Desktop\BullsandCows_Solution\x64\Debug\BullsandCows.pdb (Full PDB)
