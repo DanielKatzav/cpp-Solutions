@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\user\desktop\serial2arduino\serial2arduino\main.cpp(27): warning C4101: 'cRFS': unreferenced local variable
+  serial2Arduino.vcxproj -> C:\Users\user\Desktop\serial2Arduino\x64\Debug\serial2Arduino.exe
+  serial2Arduino.vcxproj -> C:\Users\user\Desktop\serial2Arduino\x64\Debug\serial2Arduino.pdb (Full PDB)
